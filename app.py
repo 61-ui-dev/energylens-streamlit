@@ -175,6 +175,7 @@ def load_data(uploaded_bytes: bytes | None = None) -> DataContext:
         & (raw["iso_code"].astype(str).str.len() == 3)
         & (~raw["iso_code"].astype(str).str.startswith("OWID"))
         & (raw["year"] >= 1990)
+        & (raw["year"] <= 2024)
     ].copy()
     df = df.sort_values(["country", "year"]).reset_index(drop=True)
 
