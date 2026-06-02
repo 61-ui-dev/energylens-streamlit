@@ -1,0 +1,7 @@
+streamlit>=1.36
+pandas>=2.2,<3
+numpy>=1.26,<2
+plotly>=5.22
+scikit-learn>=1.5
+prophet>=1.1.5
+tensorflow-cpu>=2.16,<2.18
